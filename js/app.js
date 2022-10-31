@@ -30,7 +30,6 @@ fetch (urlapi)
 
 /**EVENT LISTENER  */
 
-
 const $form = document.querySelector ('#form')
 $form.addEventListener('submit', validacion)
 
