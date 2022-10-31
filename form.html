@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style_form.css">
+    <link rel="stylesheet" href="/css/@mediaQueries_form.css">
+
+    <title>CONTACTO</title>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <img src="/img/hotel-solid.svg" class="logo" alt="codo a codo">
+            <h1 class="logotext">HOTEL CODO</h1>
+            <ul class="menu" id="menu">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/habitaciones.html">Habitaciones</a></li>
+                <li><a href="/ubicacion.html">Ubicacion</a></li>
+                <li><a href="/form.html">Contacto</a></li>
+            </ul>
+            <div class="menu-bar" id="menu-bar">
+                <i><img src="/img/bars-solid.svg" alt=""></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="hero">
+        <form class="form" id="form" onsubmit="return validacion()" action="https://formspree.io/f/xqkjynvb" method="POST" >  
+                
+            
+            <div class="form-header"><h1>Formulario de contacto</h1><br>
+            <h3>Dejanos un mensaje y nos estaremos contactando a la brevedad...</h3>
+            </div>
+
+                <input id="nombre" type="text" name="Nombre" class="form-input" placeholder="Nombre">    <span class="doterr" id="dotnm"></span>
+                <input id="apellido" type="text" name="Apellido" class="form-input" placeholder="Apellido"> <span class="doterr" id="dotap"></span>
+                <input id="telefono" type="text" name="Telefono" class="form-input" placeholder="Teléfono"> 
+                <input id="correo" type="email" name="Correo" class="form-input" placeholder="Correo"> <span class="doterr" id="dotcr"></span>
+                <select name="elegir" id="elegir" class="form-input">
+                    <option value="">Como nos conoció?</option>
+                    <option value="Internet">Internet</option>
+                    <option value="Redes sociales">Redes sociales</option>
+                    <option value="Diario">Diario</option>
+                    <option value="Recomendacion">Recomendacion</option>
+                </select>
+                <textarea name="consulta" id="consulta" class="form-input" placeholder="Escriba su consulta aqui..." rows="12"></textarea>
+                
+            <button class="form-button" type="submit">Enviar</button> 
+            <br>
+                
+                
+        </form> 
+        
+        <aside>
+            <div class="imgslide">
+            <img src="/img/1form.jpg" alt="" class="form_foto">
+            <img src="/img/2form.jpg" alt="" class="form_foto">
+            <img src="/img/3form.jpg" alt="" class="form_foto">
+            </div>
+
+        </aside>
+    </main>
+    
+
+    <footer class="footer">
+        <div class="derechos">
+            <h2>CURSO CODO A CODO</h2>
+            <i><img src="/img/code-solid.svg" class="code" alt=""></i>
+        </div>
+        <div class="REDES">
+            <h2>NUESTRAS REDES</h2>
+        </div>
+        <div class="social-network">
+            <i><img src="/img/whatsapp.svg" class="wpp" alt="whatsapp metaverso codoacodo"></i>
+            <i><img src="/img/discord.svg" class="dd" alt="discord metaverso codoacodo"></i>
+            <i><img src="/img/github.svg" class="github" alt="github metaverso codoacodo"></i>
+        </div>
+    </footer>
+
+
+ <script src="/js/form_v2 copy.js"></script>
+
+</body>
+</html>

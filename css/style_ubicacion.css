@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;800;900&family=Roboto:wght@100;300;500;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif; /*font family principal*/
+}
+
+.navbar {
+    background-color: rgba(129, 126, 119, 0.425);
+    display: grid;
+    grid-template-columns: repeat(8, 1fr); /**/
+    grid-template-rows: repeat(3,0.1fr);
+    align-items: center;
+
+}
+
+.navbar .logo{
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    grid-column: 1 / 1;
+    grid-row: 1/3;
+}
+
+.navbar .logotext{
+    grid-column: 2 / 4;
+    grid-row: 1/3;
+}
+
+.navbar .menu{
+    grid-column: 5 / 9;
+    grid-row: 1/3;
+    display: flex;
+    justify-content:space-around ; /*para que tengan margen uno con otro*/
+
+}
+
+.navbar .menu li{
+    list-style:none;
+}
+
+.navbar .menu a{
+    text-decoration:none;
+    color:black;
+    cursor: pointer;
+}
+
+.navbar .menu a:hover{
+    color: goldenrod
+}
+
+.navbar .menu-bar{
+    display: none;
+}
+
+/*SECTION MAIN*/
+
+.hero_1{
+    height: 80vh;
+    background-image: linear-gradient(rgba(16, 16, 16, .6),rgba(16, 16, 16, .7)), url("D:\User\Desktop\hotel\img\7TREU25M7RBUVJXERQNPYCYCFE.webp");
+    background-size: cover; /*cubre todo*/
+    max-width: 100%; /*para no crecer mas de su tamaño original*/
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows:repeat(8, 1fr);
+}
+
+
+
+.hero_1 .ubicacion{
+    color: whitesmoke;
+    grid-row: 3/7;
+    grid-column: 2/4;
+    background-color: #18181894;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.hero_1 .ubicacion .cedes{
+    padding-top: 40px;
+}
+
+.hero_1 .ubicacion h1{
+    padding-top: 5px;
+    font-size: 2.3em;
+    grid-column: 3/5;
+    color: whitesmoke;
+    font-weight: 500;
+    text-align: center;
+}
+
+.hero_1 .ubicacion h3{
+    padding-top: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9em;
+    font-weight: 300;
+    text-align: center;
+    color: goldenrod;
+}
+
+.hero_1 p{
+    font-size: 1.3em;
+    justify-content: center;
+    display: flex;
+    font-weight: 550;
+    padding-top: 20px;
+    margin: auto;
+}
+
+.hero_1 .CABA{
+    color: whitesmoke;
+    list-style: none;
+    font-weight: 300;
+    font-size: 0.8em;
+}
+
+.hero_1 .mapa{
+    background-color: #18181894;
+    height: 70vh;
+    grid-row: 2 / 8 ;
+    grid-column: 5/10;
+    border-radius: 10px;
+    padding-bottom: 5px;
+}
+
+.mapa .pmadero, .palermo{
+    padding: 8px;
+    border-radius: 20px;
+}
+
+/*SECTION FOOTER*/
+
+.social-network .wpp, .dd, .github {
+    height: 25px;
+    width: 25px;
+}
+
+.derechos .code{
+    height: 20px;
+    width: 20px;
+    margin-left: 5px;
+}
+
+.footer{
+    display: grid;
+    height: 60px;
+    align-items: center;
+    background-color: goldenrod;
+    color: #181818;
+    grid-template-areas: 
+        "REDES  social-network  derechos";
+}
+
+.footer .derechos{
+    grid-template-areas: derechos;
+    display: flex; /*para que se pongan alado*/
+    justify-content: center;
+    background-color: goldenrod;
+    padding: 20px;
+    color: #181818;
+}
+
+.footer .REDES{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #181818;
+    color: goldenrod;
+    border-color: whitesmoke;
+}
+
+.footer .social-network{
+    display: flex;
+    justify-content:space-around;
+    padding: 20px;
+    background-color: goldenrod;
+}
+
